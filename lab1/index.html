@@ -12,12 +12,12 @@
                         <div class="dropdown">
                             <button class="drop-button">Subjects</button>
                             <div class="dropdown-content">
-                                <a href="#">Programming</a>
-                                <a href="#">Data Analysis</a>
-                                <a href="#">Languages</a>
-                                <a href="#">Arts</a>
-                                <a href="#">Biology</a>
-                                <a href="#">Chemistry</a>
+                                <a href="#" class="simple-link">Programming</a>
+                                <a href="#" class="simple-link">Data Analysis</a>
+                                <a href="#" class="simple-link">Languages</a>
+                                <a href="#" class="simple-link">Arts</a>
+                                <a href="#" class="simple-link">Biology</a>
+                                <a href="#" class="simple-link">Chemistry</a>
                             </div>
                         </div>
                     </li>
@@ -25,10 +25,10 @@
                         <div class="dropdown">
                             <button class="drop-button">Schools</button>
                             <div class="dropdown-content">
-                                <a href="#">ITMO</a>
-                                <a href="#">MIT</a>
-                                <a href="#">EPITECH</a>
-                                <a href="#">Sorbonne</a>
+                                <a href="#" class="simple-link">ITMO</a>
+                                <a href="#" class="simple-link">MIT</a>
+                                <a href="#" class="simple-link">EPITECH</a>
+                                <a href="#" class="simple-link">Sorbonne</a>
                             </div>
                         </div>
                     </li>
@@ -36,11 +36,12 @@
                         <div class="dropdown">
                             <button class="drop-button">Addition info</button>
                             <div class="dropdown-content">
-                                <a href="#">About us</a>
-                                <a href="#">Customer support</a>
+                                <a href="#" class="simple-link">About us</a>
+                                <a href="#" class="simple-link">Customer support</a>
                             </div>
                         </div>
                     </li>
+
                     <li class="navigation-bar-option">
                         <a href="#">
                             <button class="nav-button" id="unauthorized-button">Sign up/Sign in</button>
@@ -51,10 +52,15 @@
                             <button class="register-button" id="authorized-button">Profile</button>
                         </a>
                     </li>
+                    <li class="navigation-bar-option">
+                        <form class="search-form" action="/search" method="get">
+                            <input type="text" name="q" placeholder="Search...">
+                        </form>
+                    </li>
                 </ul>
             </nav>
             <div class="logo-button">
-                <a href="index.html"><img src="Pictures/Logos/Kitten.jpg" width="40px" alt="NLM"></a>
+                <a href="index.html"><img src="Pictures/Logos/Kitten.png" alt="NLM" class="logo-button" width="80px"></a>
             </div>
         </header>
         <main>
@@ -62,22 +68,28 @@
                 <h1>Most popular courses</h1>
                 <ul class="available-courses">
                     <li>
+                        <a href="#">
                         <div class="available-courses-option">
-                            <h3><a href="#">Python intro</a></h3>
+                            <h3>Python intro</h3>
                             <code>print("Hello world!")</code>
                         </div>
+                        </a>
                     </li>
                     <li>
+                        <a href="course_example.html">
                         <div class="available-courses-option">
-                            <h3><a href="course_example.html">C++ & algorithms</a></h3>
+                            <h3>C++ & algorithms</h3>
                             <code>std::cout << "Hello world!" << std::endl;</code>
                         </div>
+                        </a>
                     </li>
                     <li>
+                        <a href="#">
                         <div class="available-courses-option">
-                            <h3><a href="#">Thai: your first phrases</a></h3>
+                            <h3>Thai: your first phrases</h3>
                             <span lang="th">สวัสดีค่ะ</span>
                         </div>
+                        </a>
                     </li>
                 </ul>
 
@@ -86,13 +98,19 @@
                 <h2>Something you may be interested in</h2>
                 <ul class="may-be-interesting">
                     <li class="aside-links">
+                        <div class="may-be-interesting-option">
                         <a href="#">HTML &amp; CSS &amp; JavaScript</a>
+                        </div>
                     </li>
                     <li class="aside-links">
+                        <div class="may-be-interesting-option">
                         <a href="#">C# game dev</a>
+                        </div>
                     </li>
                     <li class="aside-links">
+                        <div class="may-be-interesting-option">
                         <a href="#">French for specific purposes</a>
+                        </div>
                     </li>
                 </ul>
             </aside>
