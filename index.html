@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online courses platform</title>
+    <meta charset="utf8" name="keywords" content="courses, languages, programming">
+</head>
+<body>
+<header>
+    <nav>
+        <ul class="navigation-bar">
+            <li class="navigation-bar-option">
+                <div class="dropdown">
+                    <button class="drop-button">Subjects</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="simple-link">Programming</a>
+                        <a href="#" class="simple-link">Data Analysis</a>
+                        <a href="#" class="simple-link">Languages</a>
+                        <a href="#" class="simple-link">Arts</a>
+                        <a href="#" class="simple-link">Biology</a>
+                        <a href="#" class="simple-link">Chemistry</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navigation-bar-option">
+                <div class="dropdown">
+                    <button class="drop-button">Schools</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="simple-link">ITMO</a>
+                        <a href="#" class="simple-link">MIT</a>
+                        <a href="#" class="simple-link">EPITECH</a>
+                        <a href="#" class="simple-link">Sorbonne</a>
+                    </div>
+                </div>
+            </li>
+            <li class="navigation-bar-option">
+                <div class="dropdown">
+                    <button class="drop-button">Addition info</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="simple-link">About us</a>
+                        <a href="#" class="simple-link">Customer support</a>
+                    </div>
+                </div>
+            </li>
+
+            <li class="navigation-bar-option">
+                <a href="#">
+                    <button class="nav-button" id="unauthorized-button">Sign up/Sign in</button>
+                </a>
+            </li>
+            <li class="navigation-bar-option">
+                <a href="#">
+                    <button class="register-button" id="authorized-button">Profile</button>
+                </a>
+            </li>
+            <li class="navigation-bar-option">
+                <form class="search-form" action="/search" method="get">
+                    <label>
+                        <input type="text" name="search" placeholder="Search...">
+                    </label>
+                </form>
+            </li>
+        </ul>
+    </nav>
+    <div class="logo-button">
+        <a href="index.html"><img src="images/logos/Kitten.jpg" alt="NLM" width="40px" class="logo-button"></a>
+    </div>
+</header>
+<main>
+    <div class="main-info">
+        <h1>Most popular courses</h1>
+        <ul class="available-courses">
+            <li>
+                <a href="#">
+                    <div class="available-courses-option">
+                        <h3>Python intro</h3>
+                        <div class="available-course-description">
+                            <code>print("Hello world!")</code>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="course_example.html">
+                    <div class="available-courses-option">
+                        <h3>C++ & algorithms</h3>
+                        <div class="available-course-description">
+                            <code>std::cout << "Hello world!" << std::endl;</code>
+                        </div>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <div class="available-courses-option">
+                        <h3>Thai: your first phrases</h3>
+                        <div class="available-course-description">
+                            <span lang="th">สวัสดีค่ะ</span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+
+    </div>
+    <aside>
+        <h2>Something you may be interested in</h2>
+        <ul class="may-be-interesting">
+            <li class="aside-links">
+                <a href="#">
+                    <div class="may-be-interesting-option">
+                        <h4>HTML &amp; CSS &amp; JavaScript</h4>
+                    </div>
+                </a>
+            </li>
+            <li class="aside-links">
+                <a href="#">
+                    <div class="may-be-interesting-option">
+                        <h4>C# game dev</h4>
+                    </div>
+                </a>
+            </li>
+            <li class="aside-links">
+                <a href="#">
+                    <div class="may-be-interesting-option">
+                        <h4>French for specific purposes</h4>
+                    </div>
+                </a>
+            </li>
+        </ul>
+    </aside>
+</main>
+<footer>
+    <div class="footer-content">
+        <section class="partners">
+            <h2>Our partners</h2>
+            <ul class="partners-list">
+                <li class="partners-logo">
+                    <img src="images/logos/itmo.png" alt="ITMO" width="40px" class="partner-logo">
+                </li>
+                <li class="partners-logo">
+                    <img src="images/logos/mit.png" alt="MIT" width="40px" class="partner-logo">
+                </li>
+                <li class="partners-logo">
+                    <img src="images/logos/epitech.png" alt="EPITECH" width="40px" class="partner-logo">
+                </li>
+            </ul>
+        </section>
+        <section class="daily-cute-picture">
+            <h2>Some cute picture for today</h2>
+            <pre>
+ /\_/\
+( o.o )
+ > ^ <
+            </pre>
+        </section>
+    </div>
+</footer>
+</body>
+</html>
