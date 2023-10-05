@@ -1,0 +1,65 @@
+.available-courses-option {
+    border-color: rgb(128, 128, 128);
+    border-style: dotted;
+    border-width: 3px;
+    border-radius: 10px;
+    margin-top: 10px;
+    margin-right: 30px;
+    padding-left: 15px;
+    padding-bottom: 10px;
+    position: relative;
+    display: block;
+}
+
+.available-courses-option:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.may-be-interesting-option {
+    border-radius: 10px;
+    margin-top: 10px;
+    padding: 5px 5px 5px 10px;
+    margin-right: 5px;
+}
+
+.may-be-interesting-option:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+aside {
+    border-radius: 10px;
+    background-color: #D9FFFF;
+    padding: 5px 10px 5px 20px;
+    margin-top: 10px;
+}
+
+.main-info {
+    padding-top: 5px;
+    padding-left: 20px;
+    width: 60%;
+}
+
+.available-courses-logo {
+    display: block;
+}
+
+aside {
+    width: 25%;
+}
+
+.available-courses-logo {
+    width: 30%;
+    aspect-ratio: 16/9;
+}
+
+.may-be-interesting-courses-logo {
+    width: 80%;
+    aspect-ratio: 16/9;
+}
+
+
+.available-course-description {
+    padding: 5px;
+}
+
+
