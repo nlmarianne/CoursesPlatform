@@ -5,6 +5,7 @@ html {
 
 body {
     height: 100%;
+    width: 100%;
 }
 
 button {
@@ -27,14 +28,48 @@ footer, header {
 
 header {
     background-color: #A4ECF4;
-    border-radius: 10px;
     width: 100%;
     margin-bottom: 10px;
+    min-height: 80px;
+
+}
+
+
+@media screen and (max-width: 900px) {
+    header {
+        overflow-x: scroll;
+    }
+    main {
+        flex-direction: column;
+    }
+    aside {
+        position: relative;
+        width: 100%;
+    }
+    .main-info {
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    aside {
+        padding-top: 0px;
+        position: sticky;
+        top: 120px;
+        bottom: 5px;
+        overflow-y: auto;
+        width: 20%;
+        max-height: calc(100vh - 150px);
+    }
+    .main-info {
+        height: max-content;
+        width: 70%;
+    }
 }
 
 footer {
-    border-radius: 10px;
     margin-top: 10px;
+    width: 100%;
 
 }
 
@@ -45,12 +80,18 @@ a {
 
 .navigation-bar {
     background-color: #A4ECF4;
-    height: 50px;
+    height: 10%;
     padding-top: 10px;
     border-radius: 10px;
 }
 
 li.navigation-bar-option button {
+    background-color: #A4ECF4;
+    border: none;
+    font-size: x-large;
+}
+
+.main-menu {
     background-color: #A4ECF4;
     border: none;
     font-size: x-large;
@@ -66,6 +107,7 @@ button:hover {
     display: none;
     position: absolute;
     min-width: 160px;
+    width: 30%;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
     border-radius: 10px;
@@ -79,6 +121,9 @@ button:hover {
     display: block;
     background-color: #FFFFFF;
 }
+.main-menu:hover .navigation-bar {
+    display: flex;
+}
 
 .dropdown-content a {
     display: block;
@@ -91,6 +136,7 @@ button:hover {
     position: relative;
     margin-top: 0px;
     margin-right: 40px;
+    white-space: nowrap;
 }
 
 .logo-button {
@@ -121,4 +167,48 @@ img {
     border-style: dotted;
     border-width: 3px;
     border-radius: 10px;
+    padding-top: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+aside {
+    border-radius: 10px;
+    background-color: #D9FFFF;
+    padding: 5px 10px 5px 20px;
+    margin-top: 10px;
+}
+
+main {
+    width: 100%;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.navigation-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main {
+    display: flex;
+    column-gap: 30px;
+    margin: 120px 20px 20px;
+    align-self: flex-start;
+    flex-grow: 1;
+}
+
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
 }
