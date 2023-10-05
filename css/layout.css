@@ -33,7 +33,6 @@ header {
 
 }
 
-
 @media screen and (max-width: 900px) {
     main {
         flex-direction: column;
@@ -148,7 +147,6 @@ img {
     object-fit: contain;
 }
 
-
 .footer-content {
     padding: 10px;
 }
@@ -192,6 +190,7 @@ header {
     width: 100%;
     z-index: 100;
 }
+
 .navigation-bar {
     display: flex;
     justify-content: space-between;
@@ -252,6 +251,7 @@ body {
         width: 100%;
 
     }
+
     .burger-button:checked + .li.navigation-bar-option button {
         width: 100%;
         background-color: transparent;
@@ -267,5 +267,4 @@ body {
     .burger-button:checked + .navigation-bar ul a:hover {
         background-color: #D9FFFF;
     }
-
 }

@@ -26,8 +26,6 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-
-
 .available-courses-logo {
     display: block;
 }
@@ -42,14 +40,11 @@
     aspect-ratio: 16/9;
 }
 
-
 .available-course-description {
     padding: 5px;
 }
 
-.may-be-interesting-option:nth-child(even) {
-    border-color: black;
-}
+
 
 
 

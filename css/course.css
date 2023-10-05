@@ -43,22 +43,30 @@ tr:nth-child(even) {
     justify-content: space-between;
 }
 
-/*.main-info {*/
-/*    height: 100%;*/
-/*    display: flex;*/
-/*    flex-direction: column;*/
-/*    justify-content: space-between;*/
-/*    overflow-y: scroll;*/
-/*}*/
-/*aside {*/
-/*    overflow-y: auto;*/
-/*    width: 20%;*/
-/*    height: 100%;*/
-/*    margin-top: 0px;*/
-
-/*}*/
-
 footer {
     width: 100%;
 }
+
+.variable-types-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-header {
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cell {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cell:nth-child(4n + 1), .cell:nth-child(4n + 2) {
+    background-color: #f2f2f2;
+}
+
 
