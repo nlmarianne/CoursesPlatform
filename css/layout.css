@@ -1,6 +1,7 @@
 html {
     font-family: "TT Norms Pro", sans-serif;
     height: 100%;
+    overflow-x: hidden;
 }
 
 body {
@@ -34,15 +35,17 @@ header {
 }
 
 @media screen and (max-width: 900px) {
+    body {
+        width: 100%;
+    }
     main {
         flex-direction: column;
     }
     aside {
-        position: relative;
-        width: 100%;
+        width: 85%;
     }
     .main-info {
-        width: 100%;
+        width: 85%;
     }
 }
 
@@ -61,7 +64,7 @@ header {
     }
     .main-info {
         height: max-content;
-        width: 70%;
+        width: 65%;
     }
 }
 
