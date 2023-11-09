@@ -1,0 +1,72 @@
+.step-buttons {
+
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+.course-step-button {
+
+    padding-top: 5px;
+    padding-bottom: 5px;
+    width: 15vw;
+    border-radius: 10px;
+    border-style: dotted;
+    border-width: 3px;
+    background-color: #A4ECF4;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.step-buttons {
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+footer {
+    width: 100%;
+}
+
+.variable-types-table {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    border-collapse: collapse;
+    width: 100%;
+}
+
+.table-header {
+    background-color: lightgray;
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cell {
+    padding: 8px;
+    border: 1px solid #ddd;
+}
+
+.cell:nth-child(4n + 1), .cell:nth-child(4n + 2) {
+    background-color: #f2f2f2;
+}
+
+
