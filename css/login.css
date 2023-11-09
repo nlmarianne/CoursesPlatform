@@ -1,0 +1,68 @@
+.login-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    border-style: solid;
+    border-color: #A4ECF4;
+    border-radius: 10px;
+}
+@media screen and (min-width: 400px) {
+    .login-form {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .login-form {
+        width: 80%;
+    }
+}
+
+main {
+    margin-right: 0;
+    border-style: none;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.sign-in-button {
+    background-color: #A4ECF4;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.sign-in-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    background-color: #A4ECF4;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+}
+
+.forgot-password, .sign-up {
+    color: gray;
+}
+
+.forgot-password:hover, .sign-up:hover {
+    color: lightgray;
+}
+.inputs {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
