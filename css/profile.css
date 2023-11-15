@@ -47,7 +47,6 @@
     }
 }
 
-
 .box {
     display: flex;
     justify-content: center;
@@ -62,6 +61,7 @@
     margin-top: 10px;
     width: 180px;
 }
+
 .logout-button {
     background-color: #A4ECF4;
 }
@@ -125,6 +125,7 @@ h2 {
     align-items: end;
     margin-top: 20px;
 }
+
 .bottom-section-content {
     display: block;
 }
