@@ -2,10 +2,6 @@ class Header extends HTMLElement {
     constructor() {
         super();
     }
-
-
-
-
     connectedCallback()
     {
         this.innerHTML = '<header>\n' +
@@ -17,12 +13,13 @@ class Header extends HTMLElement {
             '                        <div class="dropdown">\n' +
             '                            <button class="drop-button">Subjects</button>\n' +
             '                            <div class="dropdown-content">\n' +
-            '                                <a href="#" class="simple-link">Programming</a>\n' +
-            '                                <a href="#" class="simple-link">Data Analysis</a>\n' +
-            '                                <a href="#" class="simple-link">Languages</a>\n' +
-            '                                <a href="#" class="simple-link">Arts</a>\n' +
-            '                                <a href="#" class="simple-link">Biology</a>\n' +
-            '                                <a href="#" class="simple-link">Chemistry</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Programming\');">Programming</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Data Analysis\');">Data Analysis</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Languages\');">Languages</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Arts\');">Arts</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Biology\');">Biology</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSubject(\'Chemistry\');">Chemistry</a>\n' +
+            '<a href="#" class="simple-link" onclick="filterSubject(\'Other\');">Other</a>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
             '                    </li>\n' +
@@ -30,10 +27,11 @@ class Header extends HTMLElement {
             '                        <div class="dropdown">\n' +
             '                            <button class="drop-button">Schools</button>\n' +
             '                            <div class="dropdown-content">\n' +
-            '                                <a href="#" class="simple-link">ITMO</a>\n' +
-            '                                <a href="#" class="simple-link">MIT</a>\n' +
-            '                                <a href="#" class="simple-link">EPITECH</a>\n' +
-            '                                <a href="#" class="simple-link">Sorbonne</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSchool(\'ITMO\');">ITMO</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSchool(\'MIT\');">MIT</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSchool(\'EPITECH\');">EPITECH</a>\n' +
+            '                                <a href="#" class="simple-link" onclick="filterSchool(\'Sorbonne\');">Sorbonne</a>\n' +
+                '<a href="#" class="simple-link" onclick="filterSchool(\'Other\');">Other</a>\n' +
             '                            </div>\n' +
             '                        </div>\n' +
             '                    </li>\n' +
