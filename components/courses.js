@@ -82,6 +82,9 @@ if (subject) {
 else if (school) {
     selectedCourses = coursesData.filter(course => school === '' || course.school === school);
 }
+else {
+    selectedCourses = coursesData;
+}
 
 selectedCourses.forEach(courseData => {
     const courseElement = createCourseElement(courseData);
