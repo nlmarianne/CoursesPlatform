@@ -1,7 +1,5 @@
 
 function createCourseElement(courseData) {
-    console.log(window.location.pathname)
-
     const courseElement = document.createElement('li');
 
     courseElement.innerHTML = `
@@ -19,16 +17,27 @@ function createCourseElement(courseData) {
     return courseElement;
 }
 
-function filterSubject(subject) {
-    window.location.href = 'index.html?subject=' + subject;
-}
-function filterSchool(school) {
-    const selectedCourses = coursesData.filter(course => course.school === school);
+function displayAllCourses() {
     coursesContainer.textContent = '';
-    selectedCourses.forEach(courseData => {
+    coursesData.forEach(courseData => {
         const courseElement = createCourseElement(courseData);
         coursesContainer.appendChild(courseElement);
     });
+}
+
+function filterSubject(subject) {
+    if (subject === 'All') {
+        displayAllCourses();
+    } else {
+        window.location.href = 'index.html?subject=' + subject;
+    }
+}
+function filterSchool(school) {
+    if (subject === 'All') {
+        displayAllCourses();
+    } else {
+        window.location.href = 'index.html?school=' + school;
+    }
 }
 
 const coursesData = [
@@ -63,9 +72,17 @@ const coursesData = [
 ];
 
 const coursesContainer = document.getElementById('courses-container');
-
+let selectedCourses;
 let subject = new URLSearchParams(window.location.search).get('subject');
-const selectedCourses = coursesData.filter(course => subject === '' || course.subject === subject);
+let school = new URLSearchParams(window.location.search).get('school');
+
+if (subject) {
+    selectedCourses = coursesData.filter(course => subject === '' || course.subject === subject);
+}
+else if (school) {
+    selectedCourses = coursesData.filter(course => school === '' || course.school === school);
+}
+
 selectedCourses.forEach(courseData => {
     const courseElement = createCourseElement(courseData);
     coursesContainer.appendChild(courseElement);

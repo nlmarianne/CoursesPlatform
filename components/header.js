@@ -13,6 +13,7 @@ class Header extends HTMLElement {
             '                        <div class="dropdown">\n' +
             '                            <button class="drop-button">Subjects</button>\n' +
             '                            <div class="dropdown-content">\n' +
+            '<a href="#" class="simple-link" onclick="filterSubject(\'All\');">All</a>\n' +
             '                                <a href="#" class="simple-link" onclick="filterSubject(\'Programming\');">Programming</a>\n' +
             '                                <a href="#" class="simple-link" onclick="filterSubject(\'Data Analysis\');">Data Analysis</a>\n' +
             '                                <a href="#" class="simple-link" onclick="filterSubject(\'Languages\');">Languages</a>\n' +
