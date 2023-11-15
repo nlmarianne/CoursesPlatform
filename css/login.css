@@ -55,7 +55,7 @@ main {
 }
 
 .forgot-password, .sign-up {
-    color: gray;
+    color: rgb(128, 128, 128);
 }
 
 .forgot-password:hover, .sign-up:hover {

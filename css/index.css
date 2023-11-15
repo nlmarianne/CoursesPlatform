@@ -15,14 +15,14 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
-.may-be-interesting-option {
+.aside-courses-option {
     border-radius: 10px;
     margin-top: 10px;
     padding: 5px 5px 5px 10px;
     margin-right: 5px;
 }
 
-.may-be-interesting-option:hover {
+.aside-courses-option:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
 }
 
@@ -35,7 +35,7 @@
     aspect-ratio: 16/9;
 }
 
-.may-be-interesting-courses-logo {
+.aside-courses-logo {
     width: 80%;
     aspect-ratio: 16/9;
 }

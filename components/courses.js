@@ -40,36 +40,7 @@ function filterSchool(school) {
     }
 }
 
-const coursesData = [
-    {
-        title: 'Python intro',
-        image: 'images/courses_desc/python.jpg',
-        alt: 'python',
-        code: 'print("Hello world!")',
-        link: '#',
-        subject: 'Programming',
-        school: 'ITMO'
-    },
-    {
-        title: 'C++ & algorithms',
-        image: 'images/courses_desc/cpp_logo.png',
-        alt: 'cpp_logo',
-        code: 'std::cout << "Hello world!" << std::endl;',
-        link: 'course_example.html',
-        subject: 'Programming',
-        school: 'EPITECH'
-    },
-    {
-        title: 'Thai: your first phrases',
-        image: 'images/courses_desc/thai.jpg',
-        alt: 'thai_alphabet',
-        lang: 'th',
-        langText: 'สวัสดีค่ะ',
-        link: '#',
-        subject: 'Languages',
-        school: 'Other'
-    },
-];
+const coursesData = JSON.parse(document.getElementById('available-courses-data').textContent);
 
 const coursesContainer = document.getElementById('courses-container');
 let selectedCourses;
