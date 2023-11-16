@@ -17,7 +17,7 @@ function submitForm() {
 
     if (username === '1234' && password === '1234') {
         localStorage.setItem('isAuthorized', 'true');
-        window.location.href = '/lab1/index.html';
+        window.location.href = 'index.html';
     } else {
         alert('Invalid credentials. Please try again.');
     }
@@ -25,6 +25,6 @@ function submitForm() {
 
 function logoutForm() {
     localStorage.setItem('isAuthorized', 'false');
-    window.location.href = '/lab1/login_page.html';
+    window.location.href = 'login_page.html';
 
 }
