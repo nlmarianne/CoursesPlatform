@@ -1,6 +1,6 @@
 (function() {
     function getCurrentPath() {
-        return document.location.pathname;
+        return window.location.pathname;
     }
 
     function highlightCurrentPage() {
@@ -8,12 +8,10 @@
         const links = document.querySelectorAll('.navigation-bar-option a');
 
         links.forEach(link => {
-            const linkPath = link.getAttribute('href');
+            const linkPath = new URL(link.href).pathname;
             const parentNode = link.parentNode;
-            console.log(parentNode);
 
-            if ('/lab1/' + linkPath === currentPath) {
-
+            if (linkPath === currentPath) {
                 parentNode.classList.add('active');
             } else if (parentNode) {
                 parentNode.classList.remove('active');
