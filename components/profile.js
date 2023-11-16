@@ -19,6 +19,8 @@ class Profile extends HTMLElement {
             '\n' +
             '    <div class="label">With us since:</div>\n' +
             '    <div class="value"><slot name="user-history"></slot></div>\n' +
+            '    <div class="label">Schedule:</div>\n' +
+            '    <div class="value"><slot name="schedule"></slot></div>\n' +
             '\n' +
             '\n' +
             '<div class="bottom-section">\n' +

@@ -104,7 +104,7 @@ h2 {
 
 .profile-content {
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: auto auto;
     column-gap: 10px;
     row-gap: 5px;
     width: 100%;
