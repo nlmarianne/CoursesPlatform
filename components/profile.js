@@ -21,6 +21,8 @@ class Profile extends HTMLElement {
             '    <div class="value"><slot name="user-history"></slot></div>\n' +
             '    <div class="label">Schedule:</div>\n' +
             '    <div class="value"><slot name="schedule"></slot></div>\n' +
+            '    <div class="label">Photos:</div>\n' +
+            '    <div class="value"><slot name="gallery"></div>\n' +
             '\n' +
             '\n' +
             '<div class="bottom-section">\n' +
