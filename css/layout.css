@@ -91,6 +91,11 @@ li.navigation-bar-option button {
     border: none;
     font-size: x-large;
 }
+.navigation-bar-option.active a button{
+    color: #ffffff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    font-size: xx-large;
+}
 
 .main-menu {
     background-color: #A4ECF4;

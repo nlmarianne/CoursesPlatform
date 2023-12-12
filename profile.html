@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Online courses platform</title>
+    <meta charset="utf-8">
+    <link href="css/layout.css" rel="stylesheet">
+    <link href="css/profile.css" rel="stylesheet">
+    <link href="css/index.css" rel="stylesheet">
+    <script src="components/header.js" type="text/javascript" defer></script>
+    <script src="components/footer.js" type="text/javascript" defer></script>
+    <script src="js/load.js" type="text/javascript" defer></script>
+    <script src="js/location.js" type="text/javascript" defer></script>
+    <script src="js/authorization.js" type="text/javascript" defer></script>
+    <script src="components/aside.js" type="text/javascript" defer></script>
+    <script src="components/profile.js" type="text/javascript" defer></script>
+</head>
+<body>
+<header-component></header-component>
+<main>
+    <div class="main-info">
+    <profile-component>
+        <span slot="username">Bla</span>
+        <span slot="email">Bla@mail.ru</span>
+        <span slot="subscription">No subscription</span>
+        <span slot="user-history">25.12.2003</span>
+        <span slot="schedule"><a href="schedule.html" class="simple-link">My schedule</a></span>
+    </profile-component>
+    </div>
+    <aside>
+        <h2>Currently studies:</h2>
+    <script id="aside-courses-data" type="application/json">
+        [
+            {
+                "title": "HTML & CSS & JavaScript",
+                "image": "images/courses_desc/html_pic.png",
+                "alt": "html_pic",
+                "link": "#"
+            },
+            {
+                "title": "C# game dev",
+                "image": "images/courses_desc/c_jail.png",
+                "alt": "c_jail",
+                "link": "#"
+            },
+            {
+                "title": "French for specific purposes",
+                "image": "images/courses_desc/french.jpg",
+                "alt": "french",
+                "link": "#"
+            }
+        ]
+    </script>
+    <ul class="aside-courses">
+    </ul>
+    </aside>
+</main>
+<footer-component></footer-component>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

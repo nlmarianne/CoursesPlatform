@@ -1,0 +1,143 @@
+#overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    justify-content: center;
+    align-items: center;
+    z-index: 2;
+}
+
+#logout-box {
+    display: none;
+    background-color: white;
+    border-radius: 10px;
+    padding: 20px;
+    text-align: center;
+}
+
+.logout-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    row-gap: 10px;
+    border-style: solid;
+    border-color: #A4ECF4;
+    border-radius: 10px;
+}
+
+@media screen and (min-width: 400px) {
+    .logout-form {
+        width: 300px;
+        height: 350px;
+    }
+    .logout-box {
+        width: 300px;
+        height: 350px;
+    }
+}
+
+@media screen and (max-width: 400px) {
+    .logout-form {
+        width: 80%;
+    }
+}
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.logout-button, .not-logout-button{
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 180px;
+}
+
+.logout-button {
+    background-color: #A4ECF4;
+}
+
+.not-logout-button {
+    background-color: #D3D3D3;
+}
+
+button.logout {
+    background-color: #A4ECF4;
+    border-style: none;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 10px;
+    width: 90px;
+}
+
+button.logout:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+.logout-button:hover, .not-logout-button:hover {
+    cursor: pointer;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    margin: 10px;
+    text-align: center;
+}
+
+.profile-content {
+    display: flex;
+}
+
+.button.logout {
+    align-self: center;
+}
+
+.profile-content {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 5px;
+    width: 100%;
+}
+
+.label {
+    text-align: left;
+    padding-bottom: 10px;
+}
+
+.value {
+    text-align: left;
+}
+
+.bottom-section {
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    margin-top: 20px;
+}
+
+.bottom-section-content {
+    display: block;
+}
+
+.main-info-table {
+    display: grid;
+    grid-template-columns: auto auto;
+    column-gap: 10px;
+    row-gap: 5px;
+    width: 60%;
+}
+
+.bottom-section .schedule, .bottom-section .logout {
+    margin: 10px;
+}
