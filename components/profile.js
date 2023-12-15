@@ -23,6 +23,8 @@ class Profile extends HTMLElement {
             '    <div class="value"><slot name="schedule"></slot></div>\n' +
             '    <div class="label">Photos:</div>\n' +
             '    <div class="value"><slot name="gallery"></div>\n' +
+            '    <div class="label">Courses:</div>\n' +
+            '    <div class="value"><slot name="courses"></div>\n' +
             '\n' +
             '\n' +
             '<div class="bottom-section">\n' +
